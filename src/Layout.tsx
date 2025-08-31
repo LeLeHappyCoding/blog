@@ -7,8 +7,9 @@ import React from 'react';
 import {BrowserRouter} from 'react-router';
 import {Provider} from 'jotai';
 import {QueryClientProvider} from '@tanstack/react-query';
-import store from './store';
 import queryClient from '@store/queryClient';
+import {useTheme} from '@hooks/useTheme';
+import store from './store';
 
 const basename = process.env.NODE_ENV === 'production' ? '/builder/blog' : '';
 
@@ -17,6 +18,8 @@ interface LayoutProps {
 }
 
 const Layout = (props: LayoutProps) => {
+    const {updateTheme} = useTheme();
+    window.updateTheme = updateTheme;
     return (
         <QueryClientProvider client={queryClient}>
             <Provider store={store}>
