@@ -3,6 +3,7 @@ import react from '@vitejs/plugin-react';
 import babel from 'vite-plugin-babel';
 // import {viteExternalsPlugin} from 'vite-plugin-externals';
 import svgr from 'vite-plugin-svgr';
+import {createHtmlPlugin} from 'vite-plugin-html';
 import alias from './scripts/alias';
 
 const isDev = process.env.NODE_ENV === 'development';
@@ -17,6 +18,13 @@ export default defineConfig({
         }),
         // viteExternalsPlugin({}),
         svgr(),
+        createHtmlPlugin({
+            template: '/template/index.html',
+            entry: '/src/main.tsx',
+            inject: {
+                data: {},
+            },
+        }),
     ],
     resolve: {
         alias,
