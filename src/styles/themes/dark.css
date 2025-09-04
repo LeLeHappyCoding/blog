@@ -1,12 +1,17 @@
 :root[data-theme='dark'] {
-    --color-bg: #0b0f17;
-    --color-text: #e6e8ec;
-    --color-primary: #60a5fa;
-    --color-primary-press: #3b82f6;
-    --color-border: rgba(255, 255, 255, 0.12);
-    --elevation-1: 0 1px 2px rgba(0, 0, 0, 0.5);
-    --radius-sm: 6px;
-    --radius-md: 10px;
-    --space-2: 8px;
-    --space-3: 12px;
+    --page-bg: #080e12;
+    --side-bg: #111324;
+    --content-bg: #161829;
+    --title: #dedede;
+    --text: #a5a9c3;
+    --text-secondary: #aab0bf;
+    --primary: #2b48ff;
+    --btn-plain-bg: #292c45;
+    --hilight-color: #7786e7;
+    --side-border: #1e2036;
+    --content-border: #1e2036;
+    --nav-border-color: #0d0f1e;
+    --index-location: #a5a9c3;
+    --side-about-icon: #8c92b3;
+    --side-about-text: #5b5f80;
 }

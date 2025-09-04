@@ -18,13 +18,12 @@ interface LayoutProps {
 }
 
 const Layout = (props: LayoutProps) => {
-    const {updateTheme} = useTheme();
-    window.updateTheme = updateTheme;
+    useTheme();
     return (
         <QueryClientProvider client={queryClient}>
             <Provider store={store}>
                 <BrowserRouter basename={basename}>
-                    <div>{props.children}</div>
+                    {props.children}
                 </BrowserRouter>
             </Provider>
         </QueryClientProvider>

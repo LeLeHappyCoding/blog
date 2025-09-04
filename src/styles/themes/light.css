@@ -1,12 +1,17 @@
 :root[data-theme='light'] {
-    --color-bg: var(--slate-50);
-    --color-text: var(--slate-900);
-    --color-primary: var(--blue-500);
-    --color-primary-press: var(--blue-600);
-    --color-border: rgba(0, 0, 0, 0.08);
-    --elevation-1: 0 1px 2px rgba(0, 0, 0, 0.06);
-    --radius-sm: 6px;
-    --radius-md: 10px;
-    --space-2: 8px;
-    --space-3: 12px;
+    --page-bg: #f3efff;
+    --side-bg: #f6f7ff;
+    --content-bg: #fff;
+    --title: #000;
+    --text: #0d0d0d;
+    --text-secondary: #aab0c0;
+    --primary: #3b3eff;
+    --btn-plain-bg: #e9ecfe;
+    --hilight-color: #3b3eff;
+    --side-border: #eeefff;
+    --content-border: #f7f7ff;
+    --nav-border-color: #eaeaea;
+    --index-location: #354677;
+    --side-about-icon: #9498cd;
+    --side-about-text: #44507b;
 }
